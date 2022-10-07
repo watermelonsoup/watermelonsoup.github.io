@@ -1,0 +1,75 @@
+<!--
+
+	Just some uncommented text here...
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eric's Website</title>
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<div><img src="img/logo.gif" class="bordered-image" alt=""></div>
+		<div>This is my website for IT-270</div>
+	</header>
+
+	<section id="main">
+		<p>Lorem ipsum dolor sit amet consectetur, <i>Here are some italics</i>adipisicing elit. <em>This is to add some emphasis</em> <strong>This is to make things strong</strong> <span>Facere architecto est ut sapiente,</span> ipsam ratione totam, <a href="http://github.com">Github</a> aliquam aliquid qui odit reiciendis <b>some bold words...</b> illum cum nobis perspiciatis, autem eius voluptates fugiat.</p>
+
+		<form action="http:wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
+			<label for="searchPhrase">Search Phrase:</label>
+			<input type="text" name="searchPhrase" id="searchPhrase"><br>
+			<input type="checkbox" name="useStars" id="useStars" checked="true"> <label for="useStars">Use Stars?</label><br>
+			<label for="langChoice">Language:</label>
+			<select name="langChoice" id="langChoice">
+				<option>All</option>
+				<option>Javascript</option>
+				<option selected>C#</option>
+				<option>Java</option>
+				<option>Ruby</option>
+			</select>
+			<br>
+			<input type="submit" value="search">
+		</form>
+		<div id="results" class="bordered-image">
+			This is where results will live... eventually.
+		</div>
+	</section>
+
+	<section id="secondary">
+		<h3>Additional Resources</h3>
+		Visit the <span
+		class="highlight">Resources</span>
+		section of our website for additional help.
+		<p>
+		<h3>Contact Information</h3>
+		Please contact the <span
+		class="highlight">author</span> for
+		additional resources at
+		eric@github.com.
+		</p>
+	</section>
+
+	<footer>
+		&copy; 2022 Eric Lee LLC
+	</footer>
+	</div>
+
+</body>
+</html>
