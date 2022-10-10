@@ -24,9 +24,29 @@ body {
 	background-size: contain;*/
 }
 
-a {
+main, a {
 	color: darkorange;
+  display: block;
 	text-decoration: none; 
+  transition: 0.1s;
+  width: fit-content;
+}
+
+main, a:hover {
+  background-color: darkorange;
+  color: #2f2f2f;
+  display: block;
+  text-decoration: none; 
+  transition: 0.1s;
+}
+
+a:hover {
+  background-color: darkorange;
+  color: #2f2f2f;
+  display: block;
+  text-decoration: none; 
+  transition: 0.1s;
+  width: fit-content;
 }
 
 html, body {
@@ -44,8 +64,8 @@ html, body {
 	border: solid 2px darkorange;
 	border-radius: 6px;
 	color: darkorange;
-	margin: 20px 0;
-	padding: 5px 20px;
+	margin: 20px;
+	padding: 20px;
 	box-shadow: 2px 2px 20px black;
 }
 
@@ -53,8 +73,8 @@ html, body {
 	border: solid 2px darkorange;
 	border-radius: 6px;
 	color:  #ff0000;
-	margin: 20px 0;
-	padding: 5px;
+  margin: 20px;
+	padding: 20px;
 	box-shadow: 2px 2px 20px black;
 }
 

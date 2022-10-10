@@ -1,5 +1,1 @@
-# This is just a website for my it270 course.
-
-# Might eventually turn it into my main website design, not sure.
-
-# Just updating this to see the effects...
+# This is just a test website for my IT-270 course at Uni.
