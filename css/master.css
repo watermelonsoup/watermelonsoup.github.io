@@ -64,7 +64,7 @@ html, body {
 	border: solid 2px darkorange;
 	border-radius: 6px;
 	color: darkorange;
-	margin: 20px;
+	margin: 20px 0 20px 0;
 	padding: 20px;
 	box-shadow: 2px 2px 20px black;
 }
@@ -73,7 +73,7 @@ html, body {
 	border: solid 2px darkorange;
 	border-radius: 6px;
 	color:  #ff0000;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 	padding: 20px;
 	box-shadow: 2px 2px 20px black;
 }
@@ -196,7 +196,6 @@ footer {
   top: 40px;
   left: auto;
   display: flex;
-  margin: auto;
 }
 
 .card {
@@ -259,7 +258,7 @@ footer {
 	border: 2px solid darkorange;
 	border-radius: 6px;
   position: relative;
-  margin: 15px;
+  margin-top: 20px;
 }
 
 /* Hide the images by default */
