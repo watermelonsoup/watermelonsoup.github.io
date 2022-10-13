@@ -30,6 +30,7 @@ main, a {
 	text-decoration: none; 
   transition: 0.1s;
   width: fit-content;
+  border-radius: 6px;
 }
 
 main, a:hover {
@@ -145,6 +146,8 @@ html, body {
 	padding: 5px;
 }
 
+/* Navbar */
+
 header nav {/*
 	float: right;*/
 }
@@ -202,10 +205,27 @@ ul .active {
 
 
 footer {
-	color: #2f2f2f;
+	color: #000;
 	background-color: darkorange;
 	text-align: center;
 }
+
+audio {
+  height: 50px;
+  background: darkorange;
+  box-shadow: 0 0 20px 0 #000;
+  border: 6px solid darkorange;
+  border-radius: 6px;
+  font-family: Silkscreen, Arial;
+  color: red;
+  font-size: 0.75em;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 6px auto;
+  margin: 10px;
+  padding: 10px;
+}
+
 
 /* Cards */
 
@@ -376,7 +396,8 @@ img {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-	background-color: #2f2f2f;
+  font-family: Silkscreen;
+	background-color: #111;
 	color: darkorange;
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -392,10 +413,12 @@ input[type=text], select, textarea {
 input[type=submit] {
   background-color: darkorange;
   border: 2px solid darkorange;
-  color: #2f2f2f;
+  color: #000;
   padding: 12px 20px;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.3s;
+  font-family: Silkscreen;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -403,6 +426,7 @@ input[type=submit]:hover {
   background-color: #2f2f2f;
   border: 2px solid darkorange;
   color: darkorange;
+  transition: 0.3s;
 }
 
 /* Add a background color and some padding around the form */
