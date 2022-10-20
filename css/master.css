@@ -9,7 +9,6 @@ header, footer {
 	box-shadow: 2px 2px 20px black;
 }
 
-
 footer {
 	padding: 10px;
 	background-origin: 3px;
@@ -18,16 +17,16 @@ footer {
 body {
 	font-family: Silkscreen, Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	background-color: #2f2f2f;/*
+	background-color: #2f2f2f;
 	background-image: url(../img/background.jpg);
 	background-attachment: fixed;
-	background-size: contain;*/
+	background-size: cover;
 }
 
 main, a {
 	color: darkorange;
   display: block;
-	text-decoration: none; 
+	text-decoration: none;
   transition: 0.1s;
   width: fit-content;
   border-radius: 6px;
@@ -37,7 +36,7 @@ main, a:hover {
   background-color: darkorange;
   color: #2f2f2f;
   display: block;
-  text-decoration: none; 
+  text-decoration: none;
   transition: 0.1s;
 }
 
@@ -46,16 +45,11 @@ main, a:hover {
   padding: 2px 8px 2px 8px;
 }
 
-#main a {
-  border-radius: 6px;
-  padding: 2px 8px 2px 8px;
-}
-
 a:hover {
   background-color: darkorange;
   color: #2f2f2f;
   display: block;
-  text-decoration: none; 
+  text-decoration: none;
   transition: 0.1s;
   width: fit-content;
 }
@@ -71,7 +65,13 @@ html, body {
 	margin: 10px;
 }
 
+h1, h2, h3, p {
+  color: darkorange;
+  text-shadow: 2px 2px 10px black;
+}
+
 #main {
+  background-color: #2f2f2f;
 	border: solid 2px darkorange;
 	border-radius: 6px;
 	color: darkorange;
@@ -81,17 +81,13 @@ html, body {
 }
 
 #secondary {
+  background-color: #2f2f2f;
 	border: solid 2px darkorange;
 	border-radius: 6px;
-	color:  #ff0000;
+	color:  darkorange;
   margin: 20px 0 20px 0;
 	padding: 20px;
 	box-shadow: 2px 2px 20px black;
-}
-
-#secondary h3 {
-	color: #0066ff;
-	letter-spacing: 7px;
 }
 
 .highlight {
@@ -141,7 +137,6 @@ html, body {
 .container {
 	width: 989px;
 	margin: 0 auto;
-	background-color: #2f2f2f;
 	color: white;
 	padding: 5px;
 }
@@ -182,7 +177,8 @@ li {
 
 li a {
   display: block;
-  color: #2f2f2f;
+  color: #000;
+  font-size: 14px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -210,22 +206,32 @@ footer {
 	text-align: center;
 }
 
+/* Audio Player */
+
 audio {
-  height: 50px;
-  background: darkorange;
-  box-shadow: 0 0 20px 0 #000;
-  border: 6px solid darkorange;
-  border-radius: 6px;
-  font-family: Silkscreen, Arial;
-  color: red;
-  font-size: 0.75em;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 6px auto;
-  margin: 10px;
-  padding: 10px;
+  outline: none;
 }
 
+audio::-webkit-media-controls-panel {
+  background-color: #ff8c00;
+  float: right;
+  margin: 10px;
+}
+
+audio::-webkit-media-controls-mute-button
+audio::-webkit-media-controls-play-button
+audio::-webkit-media-controls-timeline-container
+audio::-webkit-media-controls-current-time-display
+audio::-webkit-media-controls-time-remaining-display
+audio::-webkit-media-controls-timeline
+audio::-webkit-media-controls-volume-slider-container
+audio::-webkit-media-controls-volume-slider
+audio::-webkit-media-controls-seek-back-button
+audio::-webkit-media-controls-seek-forward-button
+audio::-webkit-media-controls-fullscreen-button
+audio::-webkit-media-controls-rewind-button
+audio::-webkit-media-controls-return-to-realtime-button
+audio::-webkit-media-controls-toggle-closed-captions-button
 
 /* Cards */
 
@@ -240,13 +246,12 @@ audio {
 
 .card {
 	border: 2px solid darkorange;
-  display: flex;
+  display: inline-block;
   height: 280px;
-  width: 250px;
+  width: auto;
   background-color: #17141d;
   border-radius: 6px;
   box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -295,10 +300,12 @@ audio {
 
 /* Slideshow container */
 .slideshow-container {
+  background-color: #000;
 	border: 2px solid darkorange;
 	border-radius: 6px;
   position: relative;
   margin-top: 20px;
+  box-shadow: 2px 2px 20px black;
 }
 
 /* Hide the images by default */
@@ -327,6 +334,7 @@ img {
   transition: 0.6s ease;
   border-radius: 6px;
   user-select: none;
+  transition: 0.3s;
 }
 
 /* Position the "next button" to the right */
@@ -340,7 +348,7 @@ img {
   background-color: darkorange;
   border-radius: 6px;
   color: #2f2f2f;
-  box-shadow: inset 0px 0px 6px 2px #000;
+  transition: 0.3s;
 }
 
 /* Caption text */
@@ -400,7 +408,7 @@ input[type=text], select, textarea {
 	background-color: #111;
 	color: darkorange;
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 2px solid #2f2f2f; /* Gray border */
   border-radius: 6px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
